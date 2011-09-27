@@ -76,7 +76,7 @@
 
 
         <hgroup>
-            <h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="/wp-content/themes/erp/images/erp.png" width="120" height="103" alt="<?php bloginfo( 'name' ); ?>" /></a></span></h1>
+            <h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="/wp-content/themes/erp/images/erp.png" width="106" height="103" alt="<?php bloginfo( 'name' ); ?>" /></a></span></h1>
             <!--
             <?php bloginfo( 'description' ); ?>
             -->
@@ -92,6 +92,7 @@
         <?php
             else :
         ?>
+            <div id="loginbar"><a href="/wp-login.php">log in</a> | <a href="/help">help</a></div>
             <?php get_search_form(); ?>
         <?php endif; ?>
 
@@ -104,9 +105,12 @@
 
 <div class="wide" id="sliderwrapper">
 	<div class="centered" id="slider">
-        <?php slidedeck( 77, array( 'width' => '100%', 'height' => '317px' ) ); ?>
+        <?php slidedeck( 77, array( 'width' => '100%', 'height' => '344px' ) ); ?>
     </div>
 </div>
 
 <div class="wide" id="mainwrapper">
 	<div id="main" class="centered">
+        <div id="tools">
+            <img src="/wp-content/themes/erp/images/tools-placeholder.png" />
+        </div>

@@ -74,7 +74,7 @@ body {
 
 }
 
-h1, h2, h3, h4, h5, h6, #header {
+h2, h3, h4, h5, h6, #header {
     font-family: 'Oswald', sans-serif;
 }
 
@@ -111,11 +111,13 @@ h1, h2, h3, h4, h5, h6, #header {
 #access  {
     letter-spacing: -1px;
     position: absolute;
+    
     top: 44px;
-    left: 140px;
+    left: 174px;
 }
 #access li {
     float: left;
+    text-transform: uppercase;
 }
 hgroup {
     position: absolute;
@@ -123,16 +125,22 @@ hgroup {
     top: 0px;
 }
 
-#header #access a {
+#header #access a,
+.sd-node-permalink{
     text-decoration: none;
     color: #fff;
     padding: 5px 9px 5px 9px;
-    text-transform: uppercase;
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
 
-#header #access .current_page_item a {
+.sd-node-permalink {
+    width: 200px;
+    text-align: center;
+}
+
+#header #access .current_page_item a,
+.sd-node-permalink {
     background: #f2c638;
     color: #252525;
     background-image: linear-gradient(bottom, #EEB300 0%, #FFFF4A 60%);
@@ -149,6 +157,7 @@ hgroup {
         color-stop(0.6, #FFFF4A)
     );
 }
+
 
 #searchformwrapper {
     position: absolute;
@@ -186,8 +195,8 @@ hgroup {
     height: 317px;
 }
 #slider {
-    width: 976px; /* TODO remove? */
-    background-image: url('images/placeholder-slider.png');
+    width: 991px; /* TODO remove? */
+    /*background-image: url('images/placeholder-slider.png');*/
     height: 100%;
 
 
@@ -211,7 +220,6 @@ hgroup {
 }
 #mainwrapper {
     background: #fff;
-    padding-top: 60px;
     padding-bottom: 30px;
     font-size: 13px;
     line-height: 21px;
@@ -224,16 +232,41 @@ hgroup {
 h1 {
     color: #002547;
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
 .home .hp-block {
     width: 310px;
     margin-left: 5px;
-    border: red 1px solid;
     float: left;
+    margin-top: 60px;
 }
 .home #primary {
     margin-left: 0px;
+}
+
+
+#loginbar {
+    position: absolute;
+    right: 5px;
+    top: 12px;
+    color: #fff;
+
+}
+a {
+    text-decoration: none;
+}
+#loginbar a {
+    color: #fff;
+    font-family: arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+#tools {
+    position: absolute;
+    left: 0px;
+    top: 5px
 }
