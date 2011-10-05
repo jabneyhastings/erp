@@ -102,15 +102,3 @@
 
     </div>
 </div>
-
-<div class="wide" id="sliderwrapper">
-	<div class="centered" id="slider">
-        <?php slidedeck( 77, array( 'width' => '100%', 'height' => '344px' ) ); ?>
-    </div>
-</div>
-
-<div class="wide" id="mainwrapper">
-	<div id="main" class="centered">
-        <div id="tools">
-            <img src="/wp-content/themes/erp/images/tools-placeholder.png" />
-        </div>

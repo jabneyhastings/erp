@@ -91,7 +91,7 @@ get_header(); ?>
 
 					</div><!-- .entry-content -->
 
-				</article><!-- #post-<?php the_ID(); ?> -->
+				<div style="clear:both"></div></article><!-- #post-<?php the_ID(); ?> -->
 
 				<?php comments_template(); ?>
 

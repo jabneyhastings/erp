@@ -7,7 +7,8 @@
  ** @since ERP 0.1
  */
 ?>
-
+<div class="wide" id="mainwrapper">
+	<div id="main" class="centered">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
 			<hgroup>
@@ -71,4 +72,4 @@
 
 			<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- #entry-meta -->
-	</article><!-- #post-<?php the_ID(); ?> -->
+	<div style="clear:both"></div></article><!-- #post-<?php the_ID(); ?> -->

@@ -68,4 +68,4 @@
 		</div><!-- #entry-author-info -->
 		<?php endif; ?>
 	</footer><!-- .entry-meta -->
-</article><!-- #post-<?php the_ID(); ?> -->
+<div style="clear:both"></div></article><!-- #post-<?php the_ID(); ?> -->

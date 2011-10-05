@@ -14,6 +14,9 @@
 
 get_header(); ?>
 
+<div class="wide" id="mainwrapper">
+	<div id="main" class="centered">
+
 		<div id="primary">
 			<div id="content" role="main">
 

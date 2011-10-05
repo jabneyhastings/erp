@@ -9,6 +9,21 @@
 
 get_header(); ?>
 
+<div class="wide" id="sliderwrapper">
+	<div class="centered" id="slider">
+        <?php slidedeck( 77, array( 'width' => '100%', 'height' => '344px' ) ); ?>
+    </div>
+</div>
+
+<div class="wide" id="toolswrapper">
+    <div id="tools" class="centered">
+            <img src="/wp-content/themes/erp/images/tools-placeholder.png" />
+        </div>
+</div>
+
+<div class="wide" id="mainwrapper">
+	<div id="main" class="centered">
+
 		<div id="primary" class="hp-block">
 			<div id="content" role="main">
 

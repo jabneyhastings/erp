@@ -9,6 +9,8 @@
 
 global $feature_class;
 ?>
+<div class="wide" id="mainwrapper">
+	<div id="main" class="centered">
 <article id="post-<?php the_ID(); ?>" <?php post_class( $feature_class ); ?>>
 	<header class="entry-header">
 		<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
@@ -44,4 +46,4 @@ global $feature_class;
 
 		<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
-</article><!-- #post-<?php the_ID(); ?> -->
+<div style="clear:both"></div></article><!-- #post-<?php the_ID(); ?> -->
