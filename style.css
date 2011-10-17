@@ -471,3 +471,175 @@ a {
     padding-top: 22px;
     padding-bottom: 22px;
 }
+
+
+
+/* ########### JAMES ############*/
+
+.entry-title,
+.page-title {
+	font-size: 42px;
+	font-style: italic;
+	line-height: 1em;
+}
+/* ARTICLE*/
+.category-news article,
+.job-list article {
+	background-color: transparent;
+	color: #444444;
+/* 	font-family: georigia, "Times New Roman", serif; */
+	font-size: 13px;
+	padding: 20px 0 10px 0;
+	width: 630px;
+	border-bottom: 1px solid #c1d6e5;
+}
+
+.category-news article:first-of-type,
+.job-list  article:first-of-type{
+	border-top: 1px solid #c1d6e5;
+}
+
+.category-news article .entry-header h1,
+.category-news article .entry-header h1 a,
+.job-list article h1 a{
+	color: #003050;
+	font-size: 30px;
+	line-height: 1em;
+	text-decoration: none !important;
+	text-transform: capitalize;
+}
+
+.category-news article .entry-header h1 a,
+.job-list article h1 a {
+	font-style: italic;
+	font-size: 30px;
+}
+
+/* SHOW/HIDE NEWS*/
+.category-news .read-more,
+.category-news .close-link,
+.apply a {
+	color: #006699;
+	font-size: 15px;
+	font-weight: bold;
+}
+.category-news .close-link {
+	background: url(img/close-arrow.gif) no-repeat left center;
+	padding-left: 12px;
+}
+.category-news article .entry-content,
+.category-news article.open-entry .entry-summary,
+.no-js .category-news article .entry-summary {
+	display: none;
+}
+.category-news article.open-entry .entry-content,
+.category-news article .entry-summary,
+.no-js .category-news article .entry-content {
+	display: block;
+}
+/* END SHOW/HIDE NEWS*
+
+/* HEADER */
+.category-news article .entry-header .entry-meta,
+.comments-list .entry-meta {
+	font-size: 16px;
+	font-style: oblique;
+	margin-top: 0;
+}
+
+.category-news article .entry-header .entry-meta a {
+	color: #444;
+}
+
+.category-news article .entry-header .entry-date,
+.comments-list .entry-meta .entry-date{
+	font-weight: bold;
+}
+
+/* END HEADER */
+/* END ARTICLE*/
+
+/* SECONDARY */
+.category-news #secondary {
+	/* background: url(img/secondary/secondary-bg.gif) repeat-y; */
+	/* font-family: georigia, "Times New Roman", serif; */
+	padding-top: 35px;
+	top: 0;
+	width: 215px;
+	border: 7px solid #D0D7DB;
+	border-top: none;
+	background-color: #fff;
+}
+
+.category-news #secondary li{
+	background-image: none;
+	border: none;
+	border-bottom: 1px solid #003051;
+	margin: 0 11px;
+	padding: 5px 0;
+}
+
+.category-news #secondary li.categories {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.category-news #secondary li:last-of-type{
+	border-bottom: none;
+}
+
+.category-news #secondary h3{
+	background: url(img/secondary/secondary-header.png) no-repeat;
+	border: none;
+	/* font-family: georigia, "Times New Roman", serif; */
+	line-height: 40px;
+	margin-left: -20px;
+	width: 254px;
+	position: relative;
+	padding: 0 20px 10px 20px; 
+}
+/* END SECONDARY */
+
+/* COMMENTS PAGE */
+.comment-header {
+	background: url(img/comments-header.jpg) no-repeat;
+	width: 950px;
+	height: 328px;
+	font-size: 15px;
+}
+
+.comment-header article{
+	width: 230px;
+	margin: 20px 0 0 20px;
+	color: #002547;
+	font-style: italic;
+}
+
+.comments-list {
+	overflow: hidden;
+	margin-left: -5%;
+	padding-top: 20px;
+}
+
+.comments-list article{
+	float: left;
+	width: 45%;
+	padding-left: 5%;
+	padding-bottom: 20px;
+}
+
+.comments-list .entry-meta {
+	font-size: 16px; 
+	text-transform: lowercase;
+	padding-bottom: 10px;
+}
+
+.comments-list h1{
+	margin-bottom: 0;
+	font-size: 26px;
+	font-weight: normal;
+}
+/* END COMMENTS PAGE */
+
+/* ########### JAMES ############*/

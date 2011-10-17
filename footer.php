@@ -33,6 +33,12 @@
         &copy; 2011 ERP - SAP recruitment experts
     </div>
 </div>
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+<!-- script added to show/hide news -->
+<script src="<?php echo get_template_directory_uri(); ?>/js/script.js" type="text/javascript"></script>
 
 <?php wp_footer(); ?>
 

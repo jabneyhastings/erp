@@ -8,7 +8,8 @@
  */
 
 get_header(); ?>
-
+<div id="mainwrapper" class="wide">
+	<div id="main" class="centered">
 		<div id="primary">
 			<div id="content" role="main">
 
@@ -28,5 +29,8 @@ get_header(); ?>
 
 			</div><!-- #content -->
 		</div><!-- #primary -->
+	</div><!-- #main -->
+</div><!-- #mainwrapper -->
 
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

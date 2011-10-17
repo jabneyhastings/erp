@@ -22,6 +22,10 @@ if ( 'content' != $current_layout ) :
 					</ul>
 				</aside>
 
+				<aside id="categories" class="widget">
+					<?php wp_list_categories( array( 'child_of' => 6, 'title_li' => __( '<h3>Categories</h3>' ), ) ); ?> 
+				</aside>
+
 				<aside id="meta" class="widget">
 					<h3 class="widget-title"><?php _e( 'Meta', 'twentyeleven' ); ?></h3>
 					<ul>
