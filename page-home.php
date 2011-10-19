@@ -45,12 +45,17 @@ get_header(); ?>
 
         <div class="hp-block">
             <h1>Latest news</h1>
-            <p>consequat facilisi at dolor,</p>
-            <p>Ea lobortis vel hendrerit, facilisis dignissim</p>
-            <p>vero illum molestie minim eros</p>
-            <hr />
-            <p>Ea lobortis vel hendrerit, facilisis dignissim</p>
-            <p>vero illum molestie minim eros</p>
+			<?php $the_query = new WP_Query('category_name=news&posts_per_page=1'); ?>
+
+			<?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+				<article>
+					<h2><?php the_title(); ?></h2>
+					<?php the_excerpt(); ?>
+				</article>						
+			<?php 
+				endwhile;
+				wp_reset_postdata();
+			?>
         </div>
 
         <div style="clear:both"> </div>
