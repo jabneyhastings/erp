@@ -251,12 +251,42 @@ h2 {
 
 .home .hp-block {
     width: 310px;
-    margin-left: 5px;
+    margin-right: 10px;
     float: left;
+	color: #5c5c5c;
+}
+.home .entry-title {
+	font-size: 30px;
+	line-height: 21px;
+	font-style: normal;
+}
+.home .hp-news h1 {
+	margin-bottom: 27px;
+}
+.home .hp-news {
+	margin-right: 0;
+}
+.home .hp-news article:first-of-type{
+	border-bottom: 1px solid #b4e4e4;
+	padding-bottom: 14px;
+	margin-bottom: 14px;
+}
+.home .hp-block a{
+	color: #003050;
+	text-decoration: none;
+}
+.home .hp-block .meta-nav{
+	color: #05a6a4;
+}
+.home .hp-block a:hover{
+	color: #000;
+	text-decoration: underline;
 }
 .home #primary {
     margin-left: 0px;
 }
+
+
 
 
 #loginbar {
@@ -360,15 +390,16 @@ a {
 
 
 #menu-footer {
-    font-size: 14px;
+    font-size: 12px;
     padding-top: 8px;
 }
 #menu-footer li {
     text-transform: uppercase;
     float: left;
     font-weight: bold;
-    width: 162px;
+    width: 150px;
     margin-top: 10px;
+	margin-right: 10px;
 }
 #menu-footer li a {
     color: #6f6f6f;

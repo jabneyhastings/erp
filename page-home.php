@@ -38,19 +38,30 @@ get_header(); ?>
 
         <div class="hp-block">
             <h1>Current jobs</h1>
-            <p>Ea lobortis vel hendrerit, facilisis dignissim</p>
-            <p>vero illum molestie minim eros</p>
-            <p>consequat facilisi at dolor,</p>
+			<ul>
+				<?php $jobs = get_posts('post_type=jobman_job&numberposts=5'); ?>
+				<? if ( $jobs ) : foreach ( $jobs as $job ) : setup_postdata( $jobs ); ?>
+				<?php $permaid = $job->ID; ?>
+				<li class="job_title"><span class='meta-nav'>&#187;</span> <a href="<?php echo get_permalink( $permaid ); ?>"><?php echo $job->post_title; ?></a></li>
+				<? endforeach; endif; ?>
+			</ul>
         </div>
 
-        <div class="hp-block">
+        <div class="hp-block hp-news">
             <h1>Latest news</h1>
-			<?php $the_query = new WP_Query('category_name=news&posts_per_page=1'); ?>
+			<?php $the_query = new WP_Query('category_name=news&posts_per_page=2'); ?>
 
 			<?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
 				<article>
-					<h2><?php the_title(); ?></h2>
-					<?php the_excerpt(); ?>
+					<a href="<?php the_permalink(); ?>">
+					<?php
+						$thetitle = get_the_excerpt(); /* or you can use get_the_title() */
+						$getlength = strlen($thetitle);
+						$thelength = 65;
+						echo substr($thetitle, 0, $thelength);
+						if ($getlength > $thelength) echo "...";
+					?>
+					</a> <span class='meta-nav'>&#187;</span>
 				</article>						
 			<?php 
 				endwhile;
