@@ -142,7 +142,6 @@ hgroup {
 #fsc-submit{
     width: 200px;
     text-align: center;
-
 }
 
 #header #access .current_page_item a,
@@ -223,7 +222,6 @@ hgroup {
 #finalfooter {
     color: #fff;
     font-size: 13px;
-    font-weight: bold;
     padding-top: 16px;
 }
 #mainwrapper {
@@ -261,7 +259,7 @@ h2 {
 	font-style: normal;
 }
 .home .hp-news h1 {
-	margin-bottom: 27px;
+	margin-bottom: 20px;
 }
 .home .hp-news {
 	margin-right: 0;
@@ -605,6 +603,7 @@ a {
 	/* background: url(img/secondary/secondary-bg.gif) repeat-y; */
 	/* font-family: georigia, "Times New Roman", serif; */
 	padding-top: 35px;
+	padding-bottom: 5px;
 	top: 0;
 	width: 215px;
 	border: 7px solid #D0D7DB;

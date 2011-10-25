@@ -26,15 +26,6 @@ if ( 'content' != $current_layout ) :
 					<?php wp_list_categories( array( 'child_of' => 6, 'title_li' => __( '<h3>Categories</h3>' ), ) ); ?> 
 				</aside>
 
-				<aside id="meta" class="widget">
-					<h3 class="widget-title"><?php _e( 'Meta', 'twentyeleven' ); ?></h3>
-					<ul>
-						<?php wp_register(); ?>
-						<li><?php wp_loginout(); ?></li>
-						<?php wp_meta(); ?>
-					</ul>
-				</aside>
-
 			<?php endif; // end sidebar widget area ?>
 		</div><!-- #secondary .widget-area -->
 <?php endif; ?>
