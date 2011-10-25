@@ -518,15 +518,18 @@ a {
 	font-weight: normal;
 }
 /* ARTICLE*/
+.single-post article,
 .category-news article,
 .job-list article {
 	background-color: transparent;
-	color: #444444;
-/* 	font-family: georigia, "Times New Roman", serif; */
+	color: #444;
 	font-size: 13px;
 	padding: 20px 0 10px 0;
 	width: 630px;
 	border-bottom: 1px solid #c1d6e5;
+}
+.single-post article {
+	padding-top: 0;
 }
 
 .category-news article:first-of-type,
@@ -542,6 +545,13 @@ a {
 	line-height: 1em;
 	text-decoration: none !important;
 	text-transform: capitalize;
+}
+.single-post article .entry-header h1 {
+	margin-bottom: 2px;
+	text-transform: capitalize;
+	font-size: 42px;
+	font-style: italic;
+	line-height: 1em;
 }
 
 .category-news article .entry-header h1 a,
@@ -578,17 +588,19 @@ a {
 /* END SHOW/HIDE NEWS*
 
 /* HEADER */
+.single-post  article .entry-header .entry-meta,
 .category-news article .entry-header .entry-meta,
 .comments-list .entry-meta {
 	font-size: 16px;
 	font-style: oblique;
 	margin-top: 0;
+	margin-bottom: 15px;
 }
-
+.single-post  article .entry-header .entry-meta a,
 .category-news article .entry-header .entry-meta a {
 	color: #444;
 }
-
+.single-post article .entry-header .entry-date,
 .category-news article .entry-header .entry-date,
 .comments-list .entry-meta .entry-date{
 	font-weight: bold;
@@ -599,9 +611,13 @@ a {
 /* END ARTICLE*/
 
 /* SECONDARY */
+.single-post #secondary a {
+	color: #5D5D5D;
+}
+.single-post #secondary,
 .category-news #secondary {
-	/* background: url(img/secondary/secondary-bg.gif) repeat-y; */
-	/* font-family: georigia, "Times New Roman", serif; */
+	position: absolute;
+	right: 0px;
 	padding-top: 35px;
 	padding-bottom: 5px;
 	top: 0;
@@ -610,7 +626,7 @@ a {
 	border-top: none;
 	background-color: #fff;
 }
-
+.single-post #secondary li,
 .category-news #secondary li{
 	background-image: none;
 	border: none;
@@ -619,16 +635,17 @@ a {
 	padding: 5px 0;
 }
 
+.single-post #secondary li.categories,
 .category-news #secondary li.categories {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
-
+.single-post #secondary li:last-of-type,
 .category-news #secondary li:last-of-type{
 	border-bottom: none;
 }
-
+.single-post #secondary h3,
 .category-news #secondary h3{
 	background: url(img/secondary/secondary-header.png) no-repeat;
 	border: none;
@@ -638,6 +655,9 @@ a {
 	width: 254px;
 	position: relative;
 	padding: 0 20px 10px 20px; 
+	margin-top: 10px;
+	color: #123E5B;
+	font-size: 20px;
 }
 /* END SECONDARY */
 
