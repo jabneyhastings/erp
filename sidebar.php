@@ -22,10 +22,10 @@ if ( 'content' != $current_layout ) :
 					</ul>
 				</aside>
 
+			<?php endif; // end sidebar widget area ?>
+
 				<aside id="categories" class="widget">
 					<?php wp_list_categories( array( 'child_of' => 6, 'title_li' => __( '<h3>Categories</h3>' ), ) ); ?> 
 				</aside>
-
-			<?php endif; // end sidebar widget area ?>
 		</div><!-- #secondary .widget-area -->
 <?php endif; ?>

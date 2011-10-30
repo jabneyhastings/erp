@@ -104,3 +104,8 @@
 
     </div>
 </div>
+<?php if ( !is_front_page() ) { ?>
+	<div class="breadcrumbwrapper">
+<?php breadcrumbs_plus( array( 'home' => 'home', 'sep' => '&lsaquo;','title' => __( '', 'breadcrumbs-plus' ), ) ); ?>
+	</div>
+<?php }; ?>
