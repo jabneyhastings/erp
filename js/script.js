@@ -8,4 +8,8 @@ $(document).ready(function() {
 		$(this).closest(".post").removeClass("open-entry");
 		return false;
 	});
+	
+	$(function(){
+		$("select, input:file").uniform({fileBtnText: 'Browse', fileDefaultText: ''});
+	});
 });

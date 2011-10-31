@@ -351,7 +351,9 @@ a {
 	display: block;
 }
 .contactFormRight input,
-.contactFormRight textarea {
+.contactFormRight textarea,
+.contactFormRight .uploader,
+.contactFormRight div.selector  {
 	width: 335px;
 	padding: 8px !important;
 	float: right;
@@ -379,6 +381,39 @@ a {
 	clear: both;
 	margin: 0 30px 0 0 !important;
 }
+
+/* UNIFORM FORM STYLES */
+.contactFormRight .uploader {
+	background-color: #fff;
+	padding: 6px 6px 4px 6px !important;
+	height: auto;
+	margin-bottom: 0 !important;
+}
+.contactFormRight div.uploader span.filename {
+	padding: 0; margin: 0;
+	width: 240px;
+	border-right: 1px solid #c1d6e5;
+}
+.contactFormRight div.uploader span.action {
+	padding: 0;
+}
+.contactFormRight div.selector {
+	height: auto;
+	padding: 4px 8px !important;
+	background: url(img/drop-down.gif) top right no-repeat #fff !important;
+}
+.contactFormRight  div.selector.hover,
+.contactFormRight  div.selector.focus {
+	background: url(img/drop-down.gif) top right no-repeat #fff !important;
+}
+
+.contactFormRight div.selector select,
+.contactFormRight div.selector span {
+	width: 355px;
+	cursor: pointer;
+}
+/* END UNIFORM FORM STYLES */
+
 #content p {
     margin-bottom: 12px;
 }
@@ -777,6 +812,7 @@ a {
 	font-size: 26px;
 	font-weight: normal;
 }
-/* END COMMENTS PAGE */
+
+/* END UNIFORM FORM STYLES */
 
 /* ########### JAMES ############*/

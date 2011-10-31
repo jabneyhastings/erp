@@ -41,9 +41,10 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>js/jquery-1.6.2.min.js"><\/script>')</script>
 <!-- script added to show/hide news -->
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/script.js" type="text/javascript"></script>
 <?php }?>
 
-<script src="<?php echo get_template_directory_uri(); ?>/js/script.js" type="text/javascript"></script>
 
 <?php wp_footer(); ?>
 
