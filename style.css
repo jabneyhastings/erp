@@ -813,6 +813,58 @@ a {
 	font-weight: normal;
 }
 
-/* END UNIFORM FORM STYLES */
+/* END COMMENTS */
+
+/* ABOUT PAGE */
+.about-header {
+	width: 930px;
+	height: 320px;
+	padding: 10px;
+	background: url(img/about-heading.jpg) no-repeat;
+	color: #fff;
+	font-style: italic;
+}
+.about-header h1 {
+	color: #fff;
+}
+
+.pagename-about #main {
+	padding-top: 0;
+}
+
+.about-header div {
+	width: 210px;
+	padding: 20px;
+	height: 280px;
+	background-color: #002849;
+	background-color: rgba(0,40,73,0.8);
+}
+
+.about-main h1 {
+	font-style: italic;
+}
+
+.about-main div{
+	width: 45%;
+	float: left;
+}
+
+.about-main .col1 {
+	float: right;
+}
+
+.about-main article {
+	margin-bottom: 45px;
+}
+
+.about-main ul {
+	list-style-type: disc;
+	margin-left: 17px;
+}
+
+.about-main li {
+	text-indent: 30px;
+}
+/* END ABOUT PAGE */
 
 /* ########### JAMES ############*/
