@@ -130,7 +130,8 @@ hgroup {
 
 #header #access a,
 .sd-node-permalink,
-#fsc-submit{
+#fsc-submit,
+.button-primary{
     text-decoration: none;
     color: #fff;
     padding: 5px 9px 5px 9px;
@@ -139,7 +140,8 @@ hgroup {
 	font-size: 13px;
 }
 .sd-node-permalink,
-#fsc-submit{
+#fsc-submit,
+.button-primary{
     width: 200px;
     text-align: center;
 }
@@ -349,6 +351,7 @@ a {
 	margin-bottom: 30px !important;
 	line-height: 18px;
 	display: block;
+	float: left;
 }
 .contactFormRight input,
 .contactFormRight textarea,
@@ -364,7 +367,8 @@ a {
 	box-shadow: inset 0 1px 0 #dfdfdf;
 	margin-bottom: 30px !important;
 }
-.contactFormRight #fsc-submit {
+.contactFormRight #fsc-submit,
+.contactFormRight .button-primary {
 	border: none !important; 
 	border-top: 1px solid #a98a27 !important;
 	box-shadow: none;
