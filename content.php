@@ -16,7 +16,7 @@
 					<h3 class="entry-format"><?php _e( 'Featured', 'twentyeleven' ); ?></h3>
 				</hgroup>
 			<?php else : ?>
-			<h1 class="entry-title"><a class="read-more" href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?>&hellip;</a></h1>
+			<h1 class="entry-title"><a <?php if(!is_syndicated()){ ?>class="read-more"<?php }; ?> href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?>&hellip;</a></h1>
 			<?php endif; ?>
 
 			<?php if ( 'post' == get_post_type() ) : ?>
@@ -27,12 +27,16 @@
 					/* translators: used between list items, there is a space after the comma */
 					$categories_list = get_the_category_list( __( ', ', 'twentyeleven' ) );
 					if ( $categories_list ):
-				?>
+				?> 
+
 				<span class="cat-links">
 					<?php printf( __( '%2$s', 'twentyeleven' ), 'entry-utility-prep entry-utility-prep-cat-links', $categories_list );
 					$show_sep = true; ?>
 				</span>
-				<?php endif; // End if categories ?>
+				<?php endif; // End if categories ?>				
+				<?php if(is_syndicated()){ ?>
+				<span class="syndication">(From <a href="<?php the_permalink(); ?>"><? the_syndication_source(); ?> </a>)</span>
+				<?php }; ?>
 			</div><!-- .entry-meta -->
 			<?php endif; ?>
 
@@ -48,14 +52,19 @@
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
 		<?php else : ?>
-		<div class="entry-summary">
-			<?php the_excerpt(); ?>
-		</div><!-- .entry-summary -->
-		<div class="entry-content">
-			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?>
-			<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
-			<a href="#" class="close-link">Close </a>
-		</div><!-- .entry-content -->
+			<?php if(!is_syndicated()) : ?>
+				<div class="entry-summary">
+					<?php the_excerpt(); ?>
+				</div><!-- .entry-summary -->
+				<div class="entry-content">
+					<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?>
+					<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
+					<a href="#" class="close-link">Close </a>
+				</div><!-- .entry-content -->
+			<?php else : ?>
+				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?>
+				<br /><a href="<?php the_permalink(); ?>">View original article on <? the_syndication_source(); ?></a>
+			<?php endif; ?>
 		<?php endif; ?>
 
 		<footer class="entry-meta">

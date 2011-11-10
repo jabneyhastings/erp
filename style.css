@@ -130,7 +130,8 @@ hgroup {
 
 #header #access a,
 .sd-node-permalink,
-#fsc-submit{
+#fsc-submit,
+.button-primary{
     text-decoration: none;
     color: #fff;
     padding: 5px 9px 5px 9px;
@@ -139,7 +140,8 @@ hgroup {
 	font-size: 13px;
 }
 .sd-node-permalink,
-#fsc-submit{
+#fsc-submit,
+.button-primary{
     width: 200px;
     text-align: center;
 }
@@ -349,6 +351,7 @@ a {
 	margin-bottom: 30px !important;
 	line-height: 18px;
 	display: block;
+	float: left;
 }
 .contactFormRight input,
 .contactFormRight textarea,
@@ -364,7 +367,8 @@ a {
 	box-shadow: inset 0 1px 0 #dfdfdf;
 	margin-bottom: 30px !important;
 }
-.contactFormRight #fsc-submit {
+.contactFormRight #fsc-submit,
+.contactFormRight .button-primary {
 	border: none !important; 
 	border-top: 1px solid #a98a27 !important;
 	box-shadow: none;
@@ -655,6 +659,30 @@ a {
 	font-size: 30px;
 }
 
+.syndication,
+.syndication a {
+	font-size: 12px;
+	color: #999 !important;
+}
+
+#content nav {
+	overflow: hidden;
+	width: 630px;
+}
+
+#content nav a {
+	color: #069;
+	font-weight: bold;
+	text-transform: lowercase;
+}
+
+#content nav .nav-previous {
+	float: left;
+}
+#content nav .nav-next {
+	float: right;
+}
+
 /* SHOW/HIDE NEWS*/
 .category-news .read-more,
 .category-news .close-link,
@@ -813,6 +841,58 @@ a {
 	font-weight: normal;
 }
 
-/* END UNIFORM FORM STYLES */
+/* END COMMENTS */
+
+/* ABOUT PAGE */
+.about-header {
+	width: 930px;
+	height: 320px;
+	padding: 10px;
+	background: url(img/about-heading.jpg) no-repeat;
+	color: #fff;
+	font-style: italic;
+}
+.about-header h1 {
+	color: #fff;
+}
+
+.pagename-about #main {
+	padding-top: 0;
+}
+
+.about-header div {
+	width: 210px;
+	padding: 20px;
+	height: 280px;
+	background-color: #002849;
+	background-color: rgba(0,40,73,0.8);
+}
+
+.about-main h1 {
+	font-style: italic;
+}
+
+.about-main div{
+	width: 45%;
+	float: left;
+}
+
+.about-main .col1 {
+	float: right;
+}
+
+.about-main article {
+	margin-bottom: 45px;
+}
+
+.about-main ul {
+	list-style-type: disc;
+	margin-left: 17px;
+}
+
+.about-main li {
+	text-indent: 30px;
+}
+/* END ABOUT PAGE */
 
 /* ########### JAMES ############*/
