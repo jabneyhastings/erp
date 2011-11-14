@@ -107,6 +107,7 @@
 </div>
 <?php if ( !is_front_page() ) { ?>
 	<div class="breadcrumbwrapper">
-<?php breadcrumbs_plus( array( 'home' => 'home', 'sep' => '&lsaquo;','title' => __( '', 'breadcrumbs-plus' ), ) ); ?>
+		<?php //breadcrumbs_plus( array( 'home' => 'home', 'sep' => '&lsaquo;','title' => __( '', 'breadcrumbs-plus' ), ) ); ?>
+		<?php breadcrumb_trail(array('before' => '','separator' => '&lsaquo;',)) ;?>
 	</div>
 <?php }; ?>

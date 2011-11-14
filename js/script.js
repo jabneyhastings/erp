@@ -1,4 +1,9 @@
 $(document).ready(function() {
+	$('.comments-list').masonry({
+		// options
+		itemSelector : 'article'
+	});
+	
 	$(".read-more").click(function() {
 		$(this).closest(".post").addClass("open-entry");
 		return false;

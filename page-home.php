@@ -17,8 +17,18 @@ get_header(); ?>
 
 <div class="wide" id="toolswrapper">
     <div id="tools" class="centered">
-            <img src="/wp-content/themes/erp/images/tools-placeholder.png" />
-        </div>
+        <!-- AddThis Button BEGIN -->
+		<div class="addthis_toolbox addthis_default_style ">
+			<a class="addthis_button_preferred_1"></a>
+			<a class="addthis_button_preferred_2"></a>
+			<a class="addthis_button_preferred_3"></a>
+			<a class="addthis_button_preferred_4"></a>
+			<a class="addthis_button_compact"></a>
+			<a class="addthis_counter addthis_bubble_style"></a>
+		</div>
+		<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4ec0eca6290915a4"></script>
+		<!-- AddThis Button END -->
+    </div>
 </div>
 
 <div class="wide" id="mainwrapper">
@@ -41,8 +51,7 @@ get_header(); ?>
 			<ul>
 				<?php $jobs = get_posts('post_type=jobman_job&numberposts=5'); ?>
 				<? if ( $jobs ) : foreach ( $jobs as $job ) : setup_postdata( $jobs ); ?>
-				<?php $permaid = $job->ID; ?>
-				<li class="job_title"><span class='meta-nav'>&#187;</span> <a href="<?php echo get_permalink( $permaid ); ?>"><?php echo $job->post_title; ?></a></li>
+				<li class="job_title"><span class='meta-nav'>&#187;</span> <a href="careers/apply/<?php echo $job->ID; ?>"><?php echo $job->post_title; ?></a></li>
 				<? endforeach; endif; ?>
 			</ul>
         </div>
