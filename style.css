@@ -146,6 +146,12 @@ hgroup {
     text-align: center;
 }
 
+.overbox-in {
+	font-style: italic;
+}
+/* hide yellow link in main slider */
+.sd-node-permalink {display: none;}
+
 #header #access .current_page_item a,
 .sd-node-permalink{
     background: #f2c638;
@@ -203,11 +209,7 @@ hgroup {
 }
 #slider {
     width: 991px; /* TODO remove? */
-    /*background-image: url('images/placeholder-slider.png');*/
     height: 100%;
-
-
-
 }
 
 #footerwrapper {
@@ -285,9 +287,6 @@ h2 {
     margin-left: 0px;
 }
 
-
-
-
 #loginbar {
     position: absolute;
     right: 5px;
@@ -310,8 +309,23 @@ a {
     background: #fff;
 }
 #tools {
-    padding-top: 5px;
+    padding-top: 8px;
     padding-bottom: 25px;
+}
+
+#menu-footer #menu-item-178,
+#menu-footer #menu-item-179,
+#menu-footer #menu-item-180,
+#menu-footer #menu-item-210,
+#menu-footer #menu-item-211,
+#menu-footer #menu-item-212 {
+	width: 32px;
+	float: left;
+	clear: none;
+	margin-right: 4px;
+}
+#menu-footer #menu-item-212 {
+	margin-right: 0;
 }
 
 #FSContact1, 
