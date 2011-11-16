@@ -91,6 +91,9 @@ body {
     position: relative;
     margin: 0px auto;
 }
+input, textarea {
+	color: #666666;
+}
 
 #headerwrapper {
     background: #003050;
@@ -624,6 +627,26 @@ a {
 	font-style: italic;
 	line-height: 1em;
 	font-weight: normal;
+}
+
+/* Jobs */
+.jobman_app_form header{
+	display: none;
+}
+.jobman_app_form h1 {
+	font-size: 42px;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 1em;	
+}
+.jobman_app_form h2 {
+	color:  #003253;
+	padding: 20px 0 40px 0;
+	font-size: 18px;
+	font-style: italic;
+}
+.jobman_app_form .contactFormRight {
+	margin-top: 0;
 }
 /* ARTICLE*/
 .single-post article,
