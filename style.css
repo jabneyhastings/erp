@@ -91,6 +91,9 @@ body {
     position: relative;
     margin: 0px auto;
 }
+input, textarea {
+	color: #666666;
+}
 
 #headerwrapper {
     background: #003050;
@@ -644,10 +647,6 @@ a {
 }
 .jobman_app_form .contactFormRight {
 	margin-top: 0;
-}
-input, textarea {
-	color: #666666;
-	font-family: georgia, serif;
 }
 /* ARTICLE*/
 .single-post article,
