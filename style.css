@@ -314,8 +314,17 @@ a {
 #tools {
     padding-top: 8px;
     padding-bottom: 25px;
+	position: relative;
 }
-
+.addthis_toolbox {
+	width:200px; position: absolute; z-index:100;
+}
+.SlideDeck_Bug2436746 {
+	top: 428px !important;
+}
+.home #main{
+	padding-top: 36px;
+}
 #menu-footer #menu-item-178,
 #menu-footer #menu-item-179,
 #menu-footer #menu-item-180,
