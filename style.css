@@ -611,9 +611,29 @@ a {
     padding-bottom: 22px;
 }
 
+/* home */
+.skin-erp dl.slidedeck dd .sd-node-container{
+	height: 100%;
+	background-repeat: no-repeat;
+}
 
+.skin-erp a.sd-node-next, .skin-erp a.sd-node-next:link, .skin-erp a.sd-node-next:visited {
+	right: 7px !important;
+}
 
-/* ########### JAMES ############*/
+body .skin-erp dd.slide_1 .sd-node-container,
+body .skin-erp dd.slide_4 .sd-node-container {
+	background-image: url(img/slide/1.jpg) !important;
+}
+body .skin-erp dd.slide_2 .sd-node-container,
+body .skin-erp dd.slide_5 .sd-node-container{
+	background-image: url(img/slide/2.jpg) !important;
+}
+body .skin-erp dd.slide_3 .sd-node-container,
+body .skin-erp dd.slide_6 .sd-node-container {
+	background-image: url(img/slide/3.jpg) !important;
+}
+
 .breadcrumbwrapper {
 	width: 100%;
 	background-color: #e5eaed;
@@ -848,11 +868,27 @@ a {
 /* END SECONDARY */
 
 /* COMMENTS PAGE */
+.pagename-comments #main {
+	padding-top: 0;
+} 
 .comment-header {
 	background: url(img/comments-header.jpg) no-repeat;
 	width: 950px;
-	height: 328px;
+	height: 300px;
 	font-size: 15px;
+	position: relative;
+}
+
+.comment-header-map {
+	position: absolute;
+	top: 0;
+	left: 0;
+    z-index: 0;
+}
+
+.comment-header-text {
+	position: absolute;
+	z-index: 10;
 }
 
 .comment-header article{

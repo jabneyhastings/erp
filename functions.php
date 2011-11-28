@@ -563,7 +563,7 @@ function twentyeleven_posted_on() {
 		esc_url( get_permalink() ),
 		esc_attr( get_the_time() ),
 		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date( 'n M' ) )
+		esc_html( get_the_date( 'j M' ) )
 	);
 }
 endif;

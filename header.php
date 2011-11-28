@@ -54,8 +54,16 @@
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
-
-
+<?php 
+if (is_page( 'comments' )) {
+?>
+	<script type="text/javascript" src="swfobject.js"></script>
+	<script type="text/javascript">
+		var so = new SWFObject("comments.swf", "comment-map", "950", "300", "#ffffff");
+		so.addParam("wmode", "transparent");
+   		so.write("flashcontent");
+	</script>
+<?php }; ?>
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
