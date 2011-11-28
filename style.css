@@ -848,11 +848,27 @@ a {
 /* END SECONDARY */
 
 /* COMMENTS PAGE */
+.pagename-comments #main {
+	padding-top: 0;
+} 
 .comment-header {
 	background: url(img/comments-header.jpg) no-repeat;
 	width: 950px;
-	height: 328px;
+	height: 300px;
 	font-size: 15px;
+	position: relative;
+}
+
+.comment-header-map {
+	position: absolute;
+	top: 0;
+	left: 0;
+    z-index: 0;
+}
+
+.comment-header-text {
+	position: absolute;
+	z-index: 10;
 }
 
 .comment-header article{
