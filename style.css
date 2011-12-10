@@ -56,6 +56,14 @@ q:before, q:after {
 blockquote, q {
 	quotes: "" "";
 }
+
+a,
+a:visited {
+	color: #006699;
+}
+a:hover {
+	text-decoration: underline;
+}
 a img {
 	border: 0;
 }
