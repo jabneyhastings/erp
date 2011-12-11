@@ -87,30 +87,19 @@ if (is_page( 'comments' )) {
 
 
         <hgroup>
-            <h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="/wp-content/themes/erp/images/erp.png" width="106" height="103" alt="<?php bloginfo( 'name' ); ?>" /></a></span></h1>
+            <h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">ERP Resource Base</a></span></h1>
             <!--
             <?php bloginfo( 'description' ); ?>
             -->
         </hgroup>
 
-        <?php
-            // Has the text been hidden?
-            if ( 'blank' == get_header_textcolor() ) :
-        ?>
-            <div class="only-search<?php if ( ! empty( $header_image ) ) : ?> with-image<?php endif; ?>">
-            <?php get_search_form(); ?>
-            </div>
-        <?php
-            else :
-        ?>
-            <div id="loginbar"><a href="/wp-login.php">log in</a> | <a href="/help">help</a></div>
-            <?php get_search_form(); ?>
-        <?php endif; ?>
-
         <nav id="access" role="navigation">
             <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
         </nav><!-- #access -->
-
+		
+		<div class="social-links">
+			<?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
+		</div><!-- .social-links -->
     </div>
 </div>
 <?php if ( !is_front_page() ) { ?>
