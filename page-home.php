@@ -47,17 +47,17 @@ get_header(); ?>
 		</div><!-- #primary -->
 
         <div class="hp-block">
-            <h1>Current jobs</h1>
+            <h1>Current jobs <a href="jobs">view all jobs <span class='meta-nav'>&rsaquo;</span></a></h1>
 			<ul>
 				<?php $jobs = get_posts('post_type=jobman_job&numberposts=5'); ?>
 				<? if ( $jobs ) : foreach ( $jobs as $job ) : setup_postdata( $jobs ); ?>
-				<li class="job_title"><span class='meta-nav'>&#187;</span> <a href="careers/apply/<?php echo $job->ID; ?>"><?php echo $job->post_title; ?></a></li>
+				<li class="job_title"><span class='meta-nav'>&#187;</span> <a href="jobs/apply/<?php echo $job->ID; ?>"><?php echo $job->post_title; ?></a></li>
 				<? endforeach; endif; ?>
 			</ul>
         </div>
 
         <div class="hp-block hp-news">
-            <h1>Latest news</h1>
+            <h1>Latest news  <a href="news">view all news <span class='meta-nav'>&rsaquo;</span></a></h1>
 			<?php $the_query = new WP_Query('category_name=news&posts_per_page=2'); ?>
 
 			<?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
