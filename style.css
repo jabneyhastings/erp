@@ -224,8 +224,6 @@ hgroup {
     height: 317px;
 	background: #fff;
 	padding: 2px 0;
-	border-top: 2px solid #8fb4da;
-	border-bottom: 2px solid #8fb4da;
 }
 #slider {
     width: 991px; /* TODO remove? */
@@ -263,7 +261,7 @@ hgroup {
 
 h1 {
     color: #006699;
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 20px;
     font-weight: normal;
 }
@@ -278,6 +276,20 @@ h2 {
     float: left;
 	color: #5c5c5c;
 }
+
+.home .hp-block h1 {
+	color: #333;
+	font-size: 24px;
+}
+.home .hp-block h1 a{
+	color: #006699;
+	font-size: 12px;
+	line-height: 12px;
+}
+.home .hp-block h1 a span.meta-nav{
+	line-height: 12px;
+}
+
 .home .entry-title {
 	font-size: 30px;
 	line-height: 21px;
@@ -292,6 +304,7 @@ h2 {
 .home .hp-news article:first-of-type{
 	padding-bottom: 10px;
 	margin-bottom: 10px;
+	border-bottom: 1px solid #b2d1e0;
 }
 .home .hp-block a{
 	color: #333;
@@ -311,25 +324,27 @@ h2 {
 
 .home .hp-block .meta-nav{
 	color: #006699;
+	font-size: 18px;
+	line-height: 21px;
 }
 .home #primary {
     margin-left: 0px;
 }
 .skin-erp .overbox .back {
-	background-color: #fff !important;
+	background-color: #006699 !important;
 	opacity: 0.9 !important;
 }
 body .skin-erp dl.slidedeck dd.slide .sd-node-title a, 
 body .skin-erp dl.slidedeck dd.slide .sd-node-title a:link, 
 body .skin-erp dl.slidedeck dd.slide .sd-node-title a:visited {
-	color: #006699 !important;
+	color: #fff !important;
 	font-style: normal !important;
-	font-size: 36px !important;
+	font-size: 32px !important;
 }
 .skin-erp dl.slidedeck dd.slide .sd-node-excerpt p {
-	color: #333 !important;
+	color: #fff !important;
 	font-style: normal !important;
-	font-size: 14px;
+	font-size: 14px !important;
 }
 #loginbar {
     position: absolute;
@@ -973,13 +988,15 @@ body .skin-erp dd.slide_6 .sd-node-container {
 	height: 320px;
 	padding: 10px;
 	background: url(img/about-heading.jpg) no-repeat;
-	color: #333;
+	color: #fff;
 }
 .about-header h1 {
-	color: #006699;
+	color: #fff;
+	line-height: 32px;
 }
 
-.pagename-about #main {
+.pagename-about #main,
+.pagename-careers-with-erp #main {
 	padding-top: 0;
 }
 
@@ -987,8 +1004,8 @@ body .skin-erp dd.slide_6 .sd-node-container {
 	width: 210px;
 	padding: 20px;
 	height: 280px;
-	background-color: #002849;
-	background-color: rgba(255,255,255,0.9);
+	background-color: #00699;
+	background-color: rgba(0,102,153,0.9);
 }
 
 .about-main div{
