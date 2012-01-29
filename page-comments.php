@@ -37,19 +37,7 @@ get_header(); ?>
 						</object>
 					</div><!-- .comment-header-map -->
 				</div><!-- .comment-header -->
-				<div class="comments-list">
-					<?php query_posts('category_name=comments'); ?>
 
-					<?php while (have_posts()) : the_post(); ?>
-						<article>
-							<h1 class="entry-title"><?php the_title(); ?></h1>
-							<div class="entry-meta">
-								<time class="entry-date" datetime="<?php echo get_the_date('c'); ?>" pubdate><?php echo get_the_date('n M'); ?></time>
-							</div><!-- .entry-meta -->
-							<?php the_content( __( '', 'twentyeleven' ) ); ?>
-						</article>						
-					<?php endwhile;?>
-				</div><!-- .comments-list -->
 			</div><!-- #content -->
 		</div><!-- #primary -->
 

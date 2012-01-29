@@ -4,6 +4,8 @@ $(document).ready(function() {
 		itemSelector : 'article'
 	});
 	
+	$("body").addClass("js");
+	
 	$(".read-more").click(function() {
 		$(this).closest(".post").addClass("open-entry");
 		return false;
@@ -16,5 +18,13 @@ $(document).ready(function() {
 	
 	$(function(){
 		$("select, input:file").uniform({fileBtnText: 'Browse', fileDefaultText: ''});
+	});
+	
+	$(".about-header .title").click(function(){
+		$(".about-header .title").removeClass("current");
+		$(".about-header .content-block").removeClass("current");
+		var showId = $(this).attr("rel");
+		$('#'+showId).addClass("current");
+		$(this).addClass("current");
 	});
 });
