@@ -13,7 +13,6 @@
  */
 
 get_header(); ?>
-
 <div class="wide" id="mainwrapper">
 	<div id="main" class="centered">
 
