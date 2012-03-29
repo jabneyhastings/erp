@@ -47,12 +47,18 @@
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/js/fancybox/jquery.fancybox-1.3.4.css" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/uniform.default.css" type="text/css" media="screen" charset="utf-8" />
 <!-- <link href='http://fonts.googleapis.com/css?family=Forum|Oswald' rel='stylesheet' type='text/css'> -->
 
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<!--[if !IE 7]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
 <![endif]-->
 <?php 
 if (is_page( 'comments' )) {
@@ -82,6 +88,8 @@ if (is_page( 'comments' )) {
 
 <body <?php body_class(); ?>>
 
+<div id="stwrap">
+<div id="stmain" class="clearfix">
 <div class="wide" id="headerwrapper">
     <div id="header" class="centered">
 

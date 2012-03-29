@@ -12,27 +12,33 @@
 
 	</div><!-- /#main -->
 </div><!-- /.wide -->
+</div><!-- #stmain -->
+</div><!-- #wrap -->
+</div><!-- #wrap -->
 
-<div class="wide" id="footerwrapper">
-	<div class="centered" id="footer">
-        <nav role="navigation">
-            <?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
-        </nav><!-- #access -->
-        <?php
-            /* A sidebar in the footer? Yep. You can can customize
-             * your footer with three columns of widgets.
-             */
-            get_sidebar( 'footer' );
-        ?>
-        <div style="clear:both"></div>
-    </div>
-</div>
+<div id="stfooter">
+	<div class="wide" id="footerwrapper">
+		<div class="centered" id="footer">
+	        <nav role="navigation">
+	            <?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
+	        </nav><!-- #access -->
+	        <?php
+	            /* A sidebar in the footer? Yep. You can can customize
+	             * your footer with three columns of widgets.
+	             */
+	            get_sidebar( 'footer' );
+	        ?>
+	        <div style="clear:both"></div>
+	    </div>
+	</div>
 
-<div class="wide" id="finalfooterwrapper">
-	<div class="centered" id="finalfooter">
-        &copy; 2011 ERP - SAP recruitment experts
-    </div>
-</div>
+	<div class="wide" id="finalfooterwrapper">
+		<div class="centered" id="finalfooter">
+	        &copy; 2011 ERP - SAP recruitment experts
+	    </div>
+	</div>
+</div><!-- #stfooter -->
+
 <?php 
 	// Load jquery on all pages other than homepage which loads its own version with slidedeck
 	if ( !is_front_page() ) { 
@@ -43,6 +49,7 @@
 <!-- script added to show/hide news -->
 <script src="<?php echo get_template_directory_uri(); ?>/js/masonary.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/script.js" type="text/javascript"></script>
 <?php }?>
 

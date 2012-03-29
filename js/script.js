@@ -27,4 +27,24 @@ $(document).ready(function() {
 		$('#'+showId).addClass("current");
 		$(this).addClass("current");
 	});
+	
+	$(".job-description").each(function(){
+		var shortText = $(this).children(".job-description-text").text()
+		.trim()   
+	    .substring(0, 70)    
+	    .split(" ") 
+	    .slice(0, -1)    
+	    .join(" ") + "...";
+		
+		$(this).children(".job-description-text").hide();
+		
+		$(this).prepend('<div class="job-description-short">' + shortText + '</div>');
+	});
+		
+	$("a.job-read-more").fancybox({
+		'width'			: 	'500', 
+		'autoDimensions': 	true,
+		'padding'		:  	'30',	
+		'overlayShow'	:	true
+	});
 });
