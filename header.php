@@ -104,15 +104,5 @@ if (is_page( 'comments' )) {
         <nav id="access" role="navigation">
             <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
         </nav><!-- #access -->
-		
-		<div class="social-links">
-			<?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
-		</div><!-- .social-links -->
     </div>
 </div>
-<!-- <?php if ( !is_front_page() ) { ?>
-	<div class="breadcrumbwrapper">
-		<?php //breadcrumbs_plus( array( 'home' => 'home', 'sep' => '&lsaquo;','title' => __( '', 'breadcrumbs-plus' ), ) ); ?>
-		<?php breadcrumb_trail(array('before' => '','separator' => '&lsaquo;',)) ;?>
-	</div>
-<?php }; ?> -->
