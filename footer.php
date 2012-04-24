@@ -34,7 +34,7 @@
 
 	<div class="wide" id="finalfooterwrapper">
 		<div class="centered" id="finalfooter">
-	        &copy; 2011 ERP - SAP recruitment experts
+	        &copy; ERP Resource Base <?php echo date("Y"); ?>
 	    </div>
 	</div>
 </div><!-- #stfooter -->

@@ -31,7 +31,7 @@ $(document).ready(function() {
 	$(".job-description").each(function(){
 		var shortText = $(this).children(".job-description-text").text()
 		.trim()   
-	    .substring(0, 70)    
+	    .substring(0, 65)    
 	    .split(" ") 
 	    .slice(0, -1)    
 	    .join(" ") + "...";
@@ -42,8 +42,8 @@ $(document).ready(function() {
 	});
 		
 	$("a.job-read-more").fancybox({
-		'width'			: 	'500', 
-		'autoDimensions': 	true,
+		'width'			: 	'800', 
+		'autoDimensions': 	false,
 		'padding'		:  	'30',	
 		'overlayShow'	:	true
 	});
